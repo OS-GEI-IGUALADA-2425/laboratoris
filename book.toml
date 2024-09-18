@@ -1,0 +1,18 @@
+[book]
+authors = ["JordiMateoUdL"]
+language = "ca"
+multilingual = false
+src = "src"
+title = "Laboratoris de Sistemes Operatius per a estudiants del Grau en Enginyeria Informàtica"
+
+[output.html]
+mathjax-support = true
+
+
+[output.html.playground]
+editable = true
+
+[output.html.code.hidelines]
+sh = "~"
+c = "~"
+plaintext = "~"
