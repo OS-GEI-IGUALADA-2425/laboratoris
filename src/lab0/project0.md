@@ -82,13 +82,13 @@ Enllaç de la tasca a GitHub Classroom: [https://classroom.github.com/a/YXJZBzDs
     cd NOM_DEL_REPOSITORI
     ```
 
-    > **Informació**
+    > **ℹ️ Informació**
     >
     > Si feu clic a **Code** al repositori, podreu copiar la URL del repositori.
 
     ![Exemple de clonació](./figures/projecte/clone-repo.png)
 
-    > **Recomanació**
+    > **🚀 Recomanació**
     >
     > Tanqueu la sessió de VSCode i torneu-la a obrir però indicant la ruta a la carpeta del projecte. En el meu cas, seria `/home/jordi/test/projecte-0-calculadora-teacher`. D'aquesta manera, podreu utilitzar les eines de VSCode per a desenvolupar el projecte.
     >
@@ -144,13 +144,13 @@ Enllaç de la tasca a GitHub Classroom: [https://classroom.github.com/a/YXJZBzDs
 
     ![Commit](./figures/projecte/commit.png)
 
-    > **Compte!**
+    > **⚠️ Compte!**
     >
     > Si no feu `git add` abans de fer el `commit`, no es pujaran els canvis al repositori. Així que assegureu-vos de fer `git add` abans de fer el `commit`.
 
     ---
 
-    > **TIP:**
+    > **💡 TIP:**
     >
     > Utilitza els missatges de commit per tancar les issues relacionades amb la tasca. Per exemple, si la tasca és implementar la funció de suma, el missatge de commit podria ser: `git commit -m "@feat: Implementació de la funció de suma. Closes #1"`. Si la tasca 1 és la implementació de la funció de suma.
 
@@ -171,7 +171,7 @@ Enllaç de la tasca a GitHub Classroom: [https://classroom.github.com/a/YXJZBzDs
 
         ![Merge](./figures/projecte/merge.png)
 
-        > **Compte!**
+        > **⚠️ Compte!**
         >
         > Si hi ha conflictes, caldrà resoldre'ls abans de fer el `commit`.
 
