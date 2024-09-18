@@ -7,7 +7,8 @@ title = "Laboratoris de Sistemes Operatius per a estudiants del Grau en Enginyer
 
 [output.html]
 mathjax-support = true
-
+git-repository-url = "https://github.com/OS-GEI-IGUALADA-2425/laboratoris"
+git-repository-icon = "fa-github"
 
 [output.html.playground]
 editable = true
