@@ -1,5 +1,15 @@
 # Laboratoris
 
+|![](figs/logo.png)              |   ![](figs/institute.png)              |
+|-----------------|-----------------|
+| **Denominació** | Sistemes Operatius |
+| **Impartició**  | 1er Semestre del Grau en Enginyeria Informàtica |
+| **Professor**   | [Jordi Mateo](mailto:jordi.mateo@udl.cat) |
+| **Departament** | [ENGINYERIA INFORMÀTICA I DISSENY DIGITAL]([https://dd](https://deidd.udl.cat/ca/))  |
+| **Universitat** | [Universitat de Lleida](https://www.udl.cat) |
+| **Escola**      | [Escola Politècnica Superior](https://www.eps.udl.cat) |
+| **Guia docent** | [105012](https://guiadocent.udl.cat/html/2024-25_105012) |
+
 ## Descripció
 
 Material educatiu desenvolupat per un curs de Sistemes Operatius. Té la finalitat de proporcionar als estudiants una base robusta per entendre els principis dels sistemes operatius, els seus components fonamentals i la seva interacció amb el maquinari dels ordinadors. A través d'exercicis pràctics i treballs a l'aula, els lectors es familiaritzaran amb la instal·lació, configuració i administració d'un sistema operatiu basat en Debian, així com amb la resolució de problemes comuns que poden sorgir.
