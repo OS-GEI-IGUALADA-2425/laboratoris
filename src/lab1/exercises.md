@@ -172,14 +172,28 @@ En aquest recull d'activitats resoltes a classe, es presenten una sèrie d'exerc
 
     El resultat de l'execució del programa és: imprimirà l'últim nom introduït `n` vegades. Fixeu-vos que tots els elements de l'array `noms` apunten a la mateixa adreça de memòria, que és la que conté l'últim nom introduït. Ja que estem copiant la mateixa adreça de memòria a tots els elements de l'array, quan modifiquem el contingut de `nom` també ho estem fent per tots els elements de `noms`.
 
-    | Adreça | Contingut |
-    |--------|-----------|
-    |@noms   | @noms[0]  |
-             | @noms[1]  |
-             | @noms[2]  |
-    |@noms[0]| @nom      |
-    |@noms[1]| @nom      |
-    |@noms[2]| @nom      |
+    | Adreça | Contingut   |
+    |--------|-------------|
+    |@n      | 3           |
+    |@noms   | @noms[0]    |
+    |@noms[0]  | @nom      |
+    |@noms[0]+1|           |
+    |@noms[0]+2|           |
+    |@noms[1]  |@nom       |
+    |@noms[1]+1|           |
+    |@noms[1]+2|           |
+    |@noms[2]  | @nom      |
+    |@noms[2]+1|           |
+    |@noms[2]+2|           |
+    |@nom    | @nom[0]     |
+    |@nom[0] |     J       |
+    |@nom[1] |     o       |
+    |@nom[2] |     r       |
+    |@nom[3] |     \0      |
+    | ...    |             |
+    |@nom[19]  |           |
+   
+
 
     Per solucionar aquest error, cal copiar la cadena de caràcters a una nova adreça de memòria per a cada nom introduït. Això es pot fer amb la funció `strdup` o bé reservant memòria amb `malloc` i copiant la cadena amb `strcpy`.
 
