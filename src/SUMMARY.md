@@ -13,3 +13,4 @@
 # Laboratoris de Programació en C
 
 - [Laboratori 1: DebianBin](./lab1/main.md)
+- [Exercicis de C (I)](./lab1/exercises.md)
