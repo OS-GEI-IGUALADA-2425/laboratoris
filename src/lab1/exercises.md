@@ -364,9 +364,16 @@ En aquest recull d'activitats resoltes a classe, es presenten una sèrie d'exerc
 
     int main()
     {
-        struct p p1[] = {{1, 92}, {3, 94}, {5, 96}};
+        struct p p1[] = {
+            {1, 92}, 
+            {3, 94}, 
+            {5, 96}
+        };
+
         int x = (sizeof(p1) / 3);
+
         printf("%ld\n",sizeof(int));
+        
         if (x == 8)
             printf("true\n");
         else
