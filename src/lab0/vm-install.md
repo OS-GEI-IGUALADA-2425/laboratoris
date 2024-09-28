@@ -189,23 +189,26 @@
 
     ![Install](./figures/debian12/install-29.png)
 
-17. Instal·lació acabada. Un cop finalitzada la instal·lació, el sistema es reiniciarà i podreu accedir al GRUB per seleccionar el sistema operatiu.
+17. Instal·la el gestor d'arrancada GRUB.
     ![Finish](./figures/debian12/install-30.png)
 
-18. El GRUB us permet accedir al sistema operatiu. En aquest cas, seleccionarem Debian GNU/Linux. La resta d'opcions les veurem més endavant en el curs.
+18. Instal·lació acabada. Un cop finalitzada la instal·lació, el sistema es reiniciarà i podreu accedir al GRUB per seleccionar el sistema operatiu.
+    ![Finish](./figures/debian12/install-31.png)
 
-    ![GRUB](./figures/debian12/install-31.png)
+19. El GRUB us permet accedir al sistema operatiu. En aquest cas, seleccionarem Debian GNU/Linux. La resta d'opcions les veurem més endavant en el curs.
+
+    ![GRUB](./figures/debian12/install-32.png)
 
     > ℹ️ Què és el GRUB?
     >
     > Com veurem l'any vinent a Administració de Sistemes, el GRUB és un gestor d'arrencada que permet seleccionar el sistema operatiu que volem iniciar. Aquest gestor és molt útil en sistemes amb múltiples sistemes operatius o múltiples versions del mateix sistema operatiu.
 
-19. Inicieu sessió amb l'usuari i la contrasenya que heu configurat durant la instal·lació.
-
-    ![Login](./figures/debian12/install-32.png)
-
-20. Tanqueu la sessió amb la comanda `exit`.
-
-21. Inicieu sessió amb l'usuari `root` i la contrasenya que heu configurat durant la instal·lació.
+20. Inicieu sessió amb l'usuari i la contrasenya que heu configurat durant la instal·lació.
 
     ![Login](./figures/debian12/install-33.png)
+
+21. Tanqueu la sessió amb la comanda `exit`.
+
+22. Inicieu sessió amb l'usuari `root` i la contrasenya que heu configurat durant la instal·lació.
+
+    ![Login](./figures/debian12/install-34.png)
