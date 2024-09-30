@@ -10,6 +10,24 @@
   - [Configurant entorn de treball](./lab0/dev.md)
   - [Projecte Col·laboratiu: Calculadora](./lab0/project0.md)
 
+- [Laboratori 2: Debian](./lab2/main.md)
+  - [Usuaris a Debian](./lab2/users.md)
+  - [Tipus d'usuaris](./lab2/users_type.md)
+  - [Canvi de sessió](./lab2/su.md)
+  - [Instal·lació de paquets](./lab2/apt.md)
+  - [Variables d'entorn](./lab2/env.md)
+  - [Shells](./lab2/shells.md)
+  - [`cat` i `echo`](./lab2/cat-echo.md)
+  - [Comandes](./lab2/cmd.md)
+  - [Manual](./lab2/man.md)
+  - [Temps i dates](./lab2/time.md)
+  - [Sistema de fitxers](./lab2/fs.md)
+  - [Inodes](./lab2/inodes.md)
+  - [Enllaços](./lab2/links.md)
+  - [Estructura d'arbres](./lab2/tree.md)
+  - [Protecció de fitxers](./lab2/permissions.md)
+  - [Cheat Sheet](./lab2/cheat-sheet.md)
+
 # Laboratoris de Programació en C
 
 - [Laboratori 1: DebianBin](./lab1/main.md)
