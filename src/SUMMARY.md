@@ -32,3 +32,13 @@
 
 - [Laboratori 1: DebianBin](./lab1/main.md)
 - [Exercicis de C (I)](./lab1/exercises.md)
+
+# Kernel de Linux
+
+- [Laboratori 3: Kernel](./lab3/main.md)
+  - [Analitzant les crides a sistema](./lab3/syscalls.md)
+  - [Espiant el Kernel](./lab3/kernel-spy.md)
+  - [Programació de mòduls](./lab3/modules.md)
+  - [Compilant el Kernel](./lab3/kernel.md)
+  - [Crides a sistema personalitzades](./lab3/add-syscalls.md)
+  - [Rootkit: Escalada de Privilegis](./lab3/rootkit.md)
