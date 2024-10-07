@@ -42,3 +42,7 @@
   - [Compilant el Kernel](./lab3/kernel.md)
   - [Crides a sistema personalitzades](./lab3/add-syscalls.md)
   - [Rootkit: Escalada de Privilegis](./lab3/rootkit.md)
+
+# Laboratoris de Gestió i Communicació de Processos
+
+- [Mapa de Memòria d'un Procés](./lab4/main.md)
