@@ -32,6 +32,7 @@
 
 - [Laboratori 1: DebianBin](./lab1/main.md)
 - [Exercicis de C (I)](./lab1/exercises.md)
+- [Exercicis de C (II)](./lab5/main.md)
 
 # Kernel de Linux
 
