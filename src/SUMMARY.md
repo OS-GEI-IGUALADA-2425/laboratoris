@@ -47,3 +47,4 @@
 # Laboratoris de Gestió i Communicació de Processos
 
 - [Mapa de Memòria d'un Procés](./lab4/main.md)
+- [Exercicis de Creació de Processos](./lab4/exercises-create.md)
