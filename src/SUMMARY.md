@@ -48,3 +48,4 @@
 
 - [Mapa de Memòria d'un Procés](./lab4/main.md)
 - [Exercicis de Creació de Processos](./lab4/exercises-create.md)
+- [Exercicis de Comunicació de Processos](./lab4/exercises-communication.md)
