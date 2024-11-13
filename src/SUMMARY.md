@@ -51,3 +51,6 @@
 - [Exercicis de Comunicació de Processos](./lab4/exercises-communication.md)
 - [Pràctica 1: Pokemon GamePlay](./pract1/main.md)
 
+# Laboratoris de Planificació de Processos
+
+- [Problemes de Planificació](./lab6/problemes-planificació.md)
