@@ -54,3 +54,4 @@
 # Laboratoris de Planificació de Processos
 
 - [Problemes de Planificació](./lab6/problemes-planificació.md)
+- [Preguntes de Planificació](./lab6/preguntes.md)
