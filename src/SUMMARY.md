@@ -55,3 +55,7 @@
 
 - [Problemes de Planificació](./lab6/problemes-planificació.md)
 - [Preguntes de Planificació](./lab6/preguntes.md)
+
+# Laboratoris de Gestió de Memòria
+
+- [Problemes de Gestió de Memòria](./lab8/problemes-memoria.md)
