@@ -56,6 +56,10 @@
 - [Problemes de Planificació](./lab6/problemes-planificació.md)
 - [Preguntes de Planificació](./lab6/preguntes.md)
 
+# Laboratoris de Deadlocks
+
+- [Problemes de Deadlocks](./lab7/problemes-deadlocks.md)
+
 # Laboratoris de Gestió de Memòria
 
 - [Problemes de Gestió de Memòria](./lab8/problemes-memoria.md)
