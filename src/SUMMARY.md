@@ -63,3 +63,7 @@
 # Laboratoris de Gestió de Memòria
 
 - [Problemes de Gestió de Memòria](./lab8/problemes-memoria.md)
+
+# Laboratoris de Shell Scripting
+
+- [Challenge01: Shell Scripting](./lab9/challenge01.md)
