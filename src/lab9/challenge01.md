@@ -45,3 +45,102 @@ Els inputs són fitxers de text que us podeu baixar:
 - [input4](./challenge01/input4)
 - [input5](./challenge01/input5)
 - [test.sh](./challenge01/test.sh)
+
+<details>
+<summary>Mostra la solució (Versió Elizabeth) </summary>
+
+```bash
+#!/bin/bash
+export LC_NUMERIC="C" # Set the locale to C to avoid problems with the decimal separator
+
+total=0
+avg () { 
+    total=$(($total + $1))
+}
+
+val(){
+if [ $1 -lt -10000 ] || [ $1 -gt 10000 ]; then
+        exit 1
+    fi
+}
+
+
+read nr
+if [ $nr -lt 1 ] || [ $nr -gt 500 ]; then
+    exit 1
+fi
+
+for i in $(seq 1 $nr); do
+    read x
+    val $x
+    avg $x
+done
+
+echo "scale=3; $total / $nr" | bc
+```
+</details>
+
+<details>
+<summary>Mostra la solució (Versió Asier) </summary>
+
+```bash
+#!/bin/bash
+
+total=0
+avg () { 
+    total=$(($total + $1))
+}
+
+val(){
+if [ $1 -lt -10000 ] || [ $1 -gt 10000 ]; then
+        exit 1
+    fi
+}
+
+
+read nr
+if [ $nr -lt 1 ] || [ $nr -gt 500 ]; then
+    exit 1
+fi
+
+for i in $(seq 1 $nr); do
+    read x
+    val $x
+    avg $x
+done
+
+digit=$(($total / $nr))
+decimal=$((($total * 1000 / $nr) % 1000))
+
+printf "%d.%03d\n" $digit $decimal
+```
+</details>
+
+<details>
+<summary>Mostra la solució (Versió Alex) </summary>
+
+```bash
+#!/bin/bash
+function ex1 {
+    read long
+    if [ -z "$long" ] || [ "$long" -lt 1 ] || [ "$long" -gt 500 ]; then
+        return
+    fi
+
+    sum=0
+    for ((i = 0; i < long; i++)); do
+        read num
+        if [ -z "$num" ] || [ "$num" -lt -10000 ] || [ "$num" -gt 10000 ]; then
+            return
+        fi
+        ((sum += num))
+    done
+
+    res=$(echo "scale=3; $sum / $long" | bc)
+    res=$(echo $res | sed 's/\./,/g')
+    printf "%.3f" $res | tr , .
+}
+
+ex1
+```
+</details>
