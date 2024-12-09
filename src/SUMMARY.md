@@ -66,4 +66,8 @@
 
 # Laboratoris de Shell Scripting
 
-- [Challenge01: Shell Scripting](./lab9/challenge01.md)
+- [Challenge01](./lab9/challenge01.md)
+- [Challenge02](./lab9/challenge02.md)
+- [Challenge03](./lab9/challenge03.md)
+- [Challenge04](./lab9/challenge04.md)
+- [Challenge05](./lab9/challenge05.md)
