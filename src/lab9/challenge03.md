@@ -44,3 +44,63 @@ Per validar la vostra solució, podeu utilitzar el següent test:
 - [test.sh](./challenge03/test.sh)
 - [input1](./challenge03/input1)
 - [input2](./challenge03/input2)
+
+<details> 
+<summary>Mostra la solució (Versió 1)</summary>
+
+```bash
+#!/bin/bash
+
+search_unique_value(){
+    declare -A counts
+
+    for i in $@; do
+        counts["$i"]=$(( ${counts["$i"]} + 1 ))
+    done
+
+    for key in ${!counts[@]}; do
+        if [ ${counts["$key"]} -eq 1 ]; then
+            ckey=$key
+        fi
+    done
+}
+
+
+read n
+
+password=""
+for (( r=1; r<=$n; r++ )); do
+    read row
+    search_unique_value $row
+    password="$password$ckey"
+done
+
+echo $password
+```
+
+</details>
+
+<details>
+<summary>Mostra la solució (Versió 2)</summary>
+
+```bash
+#!/bin/bash
+
+search_unique_value(){
+    ckey=$(echo $@ | tr ' ' '\n' | sort | uniq -u)
+}
+
+# Llegim el nombre de files
+read n
+
+password=""
+for (( r=1; r<=$n; r++ )); do
+    read row
+    search_unique_value $row
+    password="$password$ckey"
+done
+
+echo $password
+```
+
+</details>
