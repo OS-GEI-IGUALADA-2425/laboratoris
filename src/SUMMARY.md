@@ -71,3 +71,4 @@
 - [Challenge03](./lab9/challenge03.md)
 - [Challenge04](./lab9/challenge04.md)
 - [Challenge05](./lab9/challenge05.md)
+- [Exercicis de Shell Scripting](./lab9/bash.md)
