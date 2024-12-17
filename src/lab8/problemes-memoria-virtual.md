@@ -51,7 +51,7 @@ on el seu conjunt d'instruccions és:
     | 0031 | Reg0<-Reg0+1                       | 1(instrucció) + 1(operand directe) + 0(operand immediat)  | 3      |
     | 0032 | Salt a 002A                        | 1(instrucció) + 1(operand directe)                        | 3      |
 
-    Per tant necessitem 2 pàgines pel codi, assumrem que les pàgines són les següents: 2 i 3, tal com es mostra a la taula anterior.
+    Per tant, necessitem 2 pàgines pel codi, assumirem que les pàgines són les següents: 2 i 3, tal com es mostra a la taula anterior.
 
     | **1:**  | **\#Página** |   |
     |---------|--------------|---|
