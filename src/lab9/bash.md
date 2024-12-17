@@ -193,6 +193,63 @@ Us demano que implementeu un script que transformi el fitxer **series.db** en un
 
 > **Nota:** No es pot fer servir la comanda `awk` per aquesta activitat.
 
+<details> 
+<summary> Solució </summary>
+
+```bash
+#!/bin/bash
+declare -A series
+declare -A personatges
+
+while IFS=: read -r s p f; do
+
+    if [[ ! ${series[$s]} ]]; then
+        series[$s]=""
+    fi
+
+    if [[ ! ${personatges["$s|$p"]} ]]; then
+        personatges["$s|$p"]=""
+    fi
+
+    personatges["$s|$p"]+="$f;"
+done < series.db
+
+for s in "${!series[@]}"; do
+    echo "+ $s"
+    for p in "${!personatges[@]}"; do
+        if [[ $p == $s* ]]; then
+            nom_personatge="${p#*|}"
+            echo "- ${nom_personatge}"
+            frases=${personatges[$p]}
+
+            IFS=";" read -ra variable <<< "$frases"
+             for f in "${variable[@]}"; do
+                echo " * $f"
+             done
+
+        fi 
+    done
+done
+```
+
+Alternatives desscrites per l´últim bucle:
+
+```bash
+while read -d ";" f; do 
+    echo " * $f"
+done <<< "$frases"
+```
+
+```bash
+IFS=";"
+for f in $frases; do
+    echo " * $f"
+done
+unset IFS
+```
+
+</details>
+
 ## Activitat 03: Fàbrica de processos
 
 Ara implementarem un script que ens permeti comprovar si existeix un altre procés en execució amb el mateix nom però PID diferent executant-se en el sistema. En cas afirmatiu, el script ha de mostrar un missatge d'error i acabar amb un codi d'error. 
