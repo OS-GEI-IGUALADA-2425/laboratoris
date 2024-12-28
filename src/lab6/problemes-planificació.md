@@ -118,7 +118,7 @@ Realitza la planificació dels següents processos utilitzant els algorismes de 
 |--------|-----------|----------------|---------------------------------------------|
 | A      | 4         | 3              | $$1_{CPU},4_{E/S},1_{CPU},5_{E/S},1_{CPU}$$ |
 | B      | 3         | 0              | $$4_{CPU},1_{E/S},3_{CPU},1_{E/S},2_{CPU}$$ |
-| C      | 2         | 1              | $$1_{CPU},5_{E/S},1_{CPU},1_{E/S},2_{CPU}$$ |
+| C      | 2         | 4              | $$1_{CPU},5_{E/S},1_{CPU},1_{E/S},2_{CPU}$$ |
 | D      | 1         | 2              | $$5_{CPU},2_{E/S},4_{CPU}$$                 |
 
 Es demana:
