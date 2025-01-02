@@ -118,7 +118,7 @@ Realitza la planificació dels següents processos utilitzant els algorismes de 
 |--------|-----------|----------------|---------------------------------------------|
 | A      | 4         | 3              | $$1_{CPU},4_{E/S},1_{CPU},5_{E/S},1_{CPU}$$ |
 | B      | 3         | 0              | $$4_{CPU},1_{E/S},3_{CPU},1_{E/S},2_{CPU}$$ |
-| C      | 2         | 4              | $$1_{CPU},5_{E/S},1_{CPU},1_{E/S},2_{CPU}$$ |
+| C      | 2         | 4              | $$1_{CPU},5_{E/S},1_{CPU}$$                 |
 | D      | 1         | 2              | $$5_{CPU},2_{E/S},4_{CPU}$$                 |
 
 Es demana:
@@ -169,23 +169,23 @@ Es demana:
 
 ### Round Robin Q=1 amb 2 CPU
 
-|   | 0  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 |
-|---|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
-| A |    |    |    | **<span style="color:green">E</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:green">E</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:green">E</span>**  | **<span style="color:red">F</span>**  |    |    |    |    |    |    |    |    |    |    |
-| B | **<span style="color:green">E</span>**  | **<span style="color:green">E</span>**  | **<span style="color:green">E</span>**  | **<span style="color:blue">P</span>**  | **<span style="color:green">E</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:green">E</span>**  | **<span style="color:green">E</span>**  | **<span style="color:green">E</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:blue">P</span>**  | **<span style="color:green">E</span>**  | **<span style="color:green">E</span>**  | **<span style="color:red">F</span>**  |    |    |    |    |    |    |    |    |    |    |    |    |
-| C |    |    |    |    | **<span style="color:green">E</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:green">E</span>**  | **<span style="color:red">F</span>**  |    |    |    |    |    |    |    |    |    |    |    |    |    |    |
-| D |    |    | **<span style="color:green">E</span>**  | **<span style="color:green">E</span>**  | **<span style="color:blue">P</span>**  | **<span style="color:green">E</span>**  | **<span style="color:green">E</span>**  | **<span style="color:green">E</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:orange">W</span>**  | **<span style="color:green">E</span>**  | **<span style="color:green">E</span>**  | **<span style="color:green">E</span>**  | **<span style="color:green">E</span>**  | **<span style="color:red">F</span>**  |    |    |    |    |    |    |    |    |    |    |    |
+|   | 0  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16|
+|---|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|---|
+| A |    |    |    | **<span style="color:blue">P</span>**  | **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:red">F</span>** |
+| B | **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:blue">P</span>**  | **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:red">F</span>** |
+| C |    |    |    |    | **<span style="color:blue">P</span>**  | **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:red">F</span>**  |    |    |    |   |
+| D |    |    | **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:blue">P</span>**  | **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:red">F</span>**  |    |   |
 
-- **\% ús CPU** = 76,7%
-- **Productivitat** = 0,27
+- **\% ús CPU** = 69,70%
+- **Productivitat** = 0,24
 
 | Procés | Temps Espera | Temps Resposta | Temps de Servei | Temps de Retorn | Temps de Retorn (N) |
 |--------|--------------|----------------|-----------------|-----------------|----------------------|
-| A      | 0            | 1              | 12              | 12              | 1                    |
-| B      | 2            | 0              | 11              | 11              | 1,18                 |
-| C      | 0            | 2              | 7               | 7               | 1                    |
-| D      | 1            | 1              | 11              | 11              | 1,09                 |
-| **AVG**| 0,75         | 1              | 10,25           | 11              | 1,07                 |
+| A      | 1            | 0              | 12              | 13              | 1,08                 |
+| B      | 1            | 0              | 14              | 16              | 1,14                 |
+| C      | 1            | 1              | 7               | 8               | 1,14                 |
+| D      | 1            | 0              | 11              | 12              | 1,09                 |
+| **AVG**| 0,5          | 0,25           | 11              | 12,25           | 1,11                 |
 
 Si analitzem l'efecte del **quantum** en l'algorisme **Round Robin** amb 1 CPU, podem observar que un **quantum** més gran té un impacte negatiu o equivalent en les mètriques de planificació. Amb un **quantum** més gran, els processos poden ser interromputs menys freqüentment. Per fer una comparativa justa caldria considerar el cost de canvi de context per saber si compensa. Normalment, compensa i **quantum** més gran tendeixen a augmentar la productivitat del sistema.
 
