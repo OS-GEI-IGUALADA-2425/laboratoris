@@ -102,7 +102,7 @@ Tot i que l'ús de la CPU és alt, l'eficiència general es veu afectada pels te
 | B      | 2            | 0              | 11              | 13              | 1,18                 |
 | C      | 0            | 0              | 10              | 10              | 1,00                 |
 | D      | 0            | 0              | 11              | 11              | 1,00                 |
-| **AVG**| 1,75         | 0,25           | 11              | 11,25           | 1,15                 |
+| **AVG**| 1,75         | 0,25           | 11              | 12,75           | 1,15                 |
 
 Amb dues CPUs, es redueixen dràsticament els temps d'espera, de resposta i de retorn per a tots els processos.
 
@@ -141,9 +141,9 @@ Es demana:
 
 | Procés | Temps Espera | Temps Resposta | Temps de Servei | Temps de Retorn | Temps de Retorn (N) |
 |--------|--------------|----------------|-----------------|-----------------|----------------------|
-| A      | 6            | 1              | 12              | 18              | 1,50                 |
+| A      | 6            | 2              | 12              | 18              | 1,50                 |
 | B      | 9            | 0              | 11              | 20              | 1,82                 |
-| C      | 4            | 3              | 7               | 11              | 1,57                 |
+| C      | 4            | 2              | 7               | 11              | 1,57                 |
 | D      | 10           | 0              | 11              | 21              | 1,91                 |
 | **AVG**| 7,25         | 1              | 10,25           | 17,5            | 1,71                 |
 
@@ -161,31 +161,31 @@ Es demana:
 
 | Procés | Temps Espera | Temps Resposta | Temps de Servei | Temps de Retorn | Temps de Retorn (N) |
 |--------|--------------|----------------|-----------------|-----------------|----------------------|
-| A      | 8            | 2              | 12              | 20              | 1,67                 |
+| A      | 8            | 4              | 12              | 20              | 1,67                 |
 | B      | 10           | 0              | 11              | 21              | 1,91                 |
-| C      | 8            | 2              | 7               | 15              | 2,14                 |
-| D      | 10           | 0              | 11              | 20              | 1,82                 |
-| **AVG**| 8,75         | 1              | 10,25           | 19              | 1,85                 |
+| C      | 8            | 4              | 7               | 15              | 2,14                 |
+| D      | 9            | 1              | 11              | 20              | 1,82                 |
+| **AVG**| 8,75         | 1,25              | 10,25           | 19              | 1,85                 |
 
 ### Round Robin Q=1 amb 2 CPU
 
 |   | 0  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 10 | 11 | 12 | 13 | 14 | 15 | 16|
 |---|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|---|
-| A |    |    |    | **<span style="color:blue">P</span>**  | **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:red">F</span>** |
-| B | **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:blue">P</span>**  | **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:red">F</span>** |
-| C |    |    |    |    | **<span style="color:blue">P</span>**  | **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:red">F</span>**  |    |    |    |   |
-| D |    |    | **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:blue">P</span>**  | **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:orange">W</span>**| **<span style="color:orange">W</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:green">E</span>**| **<span style="color:red">F</span>**  |    |   |
+| A |    |    |    | **<span style="color:blue">P</span>**  |**<span style="color:green">E</span>**  |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:green">E</span>**  |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:green">E</span>**  | **<span style="color:red">F</span>** |
+| B |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  |**<span style="color:orange">W</span>**   | **<span style="color:blue">P</span>**  |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  |**<span style="color:orange">W</span>**   |**<span style="color:green">E</span>**  | **<span style="color:blue">P</span>**  |**<span style="color:green">E</span>**  | **<span style="color:red">F</span>**  |    |    |   |
+| C |    |    |    |    | **<span style="color:blue">P</span>**  |**<span style="color:green">E</span>**  |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:green">E</span>**  | **<span style="color:red">F</span>**  |    |    |    |   | 
+| D |    |    |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  |**<span style="color:orange">W</span>**   |**<span style="color:orange">W</span>**   |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  |**<span style="color:green">E</span>**  | **<span style="color:red">F</span>**  |    |    |   |
 
-- **\% ús CPU** = 69,70%
+- **\% ús CPU** = 67,65%
 - **Productivitat** = 0,24
 
 | Procés | Temps Espera | Temps Resposta | Temps de Servei | Temps de Retorn | Temps de Retorn (N) |
 |--------|--------------|----------------|-----------------|-----------------|----------------------|
-| A      | 1            | 0              | 12              | 13              | 1,08                 |
-| B      | 1            | 0              | 14              | 16              | 1,14                 |
+| A      | 1            | 1              | 12              | 13              | 1,08                 |
+| B      | 2            | 0              | 14              | 13              | 1,08                 |
 | C      | 1            | 1              | 7               | 8               | 1,14                 |
-| D      | 1            | 0              | 11              | 12              | 1,09                 |
-| **AVG**| 0,5          | 0,25           | 11              | 12,25           | 1,11                 |
+| D      | 0            | 0              | 11              | 11              | 1,00                 |
+| **AVG**| 1            | 0,5            | 10,25           | 11,25           | 1,10                 |
 
 Si analitzem l'efecte del **quantum** en l'algorisme **Round Robin** amb 1 CPU, podem observar que un **quantum** més gran té un impacte negatiu o equivalent en les mètriques de planificació. Amb un **quantum** més gran, els processos poden ser interromputs menys freqüentment. Per fer una comparativa justa caldria considerar el cost de canvi de context per saber si compensa. Normalment, compensa i **quantum** més gran tendeixen a augmentar la productivitat del sistema.
 
