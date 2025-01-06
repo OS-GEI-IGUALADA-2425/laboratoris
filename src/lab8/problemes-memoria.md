@@ -312,7 +312,7 @@ contingut de MP:
 
     <details>
     <summary>Veure Solució</summary>
-    El nombre 2050 en binari és 00000010000001001010. Per tant, l'adreça lògica és 00000010 00000100 101010.
+    El nombre 2050 en binari és 000100000000010. Per tant, l'adreça lògica és:
 
     | s (3 bits) | p (2 bits) | d (9 bits) |
     | ---------- | ---------- | ---------- |
